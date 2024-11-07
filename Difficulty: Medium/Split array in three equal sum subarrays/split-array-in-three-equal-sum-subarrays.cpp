@@ -12,30 +12,24 @@ class Solution {
     // Function to determine if array arr can be split into three equal sum sets.
     vector<int> findSplit(vector<int>& arr) {
         // code here
-        int sum=0;
+        int sum = 0;
         int n = arr.size();
         
-        for(int i=0;i<n;i++){
-            sum+=arr[i];
-        }
+        for(int ele : arr) sum+=ele;
         
-        if(sum%3!=0){
-            return {-1,-1};
-        }
+        if(sum%3!=0) return {-1,-1};
         
-        int subpart = sum/3;
-        vector<int>ans;
-        int s = 0;
+        int reqPart = sum/3;
+        int s = 0 , first=-1 , second =-1;
         for(int i=0;i<n;i++){
-            s += arr[i];
-            if(s==subpart){
-                ans.push_back(i);
-                if(ans.size()==2) break;
-                s=0;
+            s+=arr[i];
+            if(s==reqPart){
+                if(first == -1) first = i;
+                else if(second==-1) second = i;
+                  s=0;
             }
         }
-     if(ans.size()==2) return ans;
-     return {-1,-1};
+        return {first,second};
     }
 };
 
