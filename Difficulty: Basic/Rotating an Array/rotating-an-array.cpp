@@ -12,20 +12,9 @@ class Solution {
   public:
     void leftRotate(vector<int>& arr, int d) {
         // code here
-        vector<int> re;
-        for(int i=0;i<d;i++){
-            re.push_back(arr[i]);
-        }
-        vector<int> ans;
-        for(int i=d;i<arr.size();i++){
-            ans.push_back(arr[i]);
-        }
-        for(int ele : re){
-            ans.push_back(ele);
-        }
-        for(int i=0;i<arr.size();i++){
-            arr[i] = ans[i];
-        }
+        reverse(arr.begin(),arr.end());
+        reverse(arr.begin(),arr.end()-d);
+        reverse(arr.end()-d,arr.end());
     }
 };
 
