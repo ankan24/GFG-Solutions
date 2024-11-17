@@ -1,0 +1,9 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/reversal-algorithm5340/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=reversal-algorithm">Rotating an Array</a></h2><h3>Difficulty Level : Difficulty: Basic</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given an array <strong>arr[]</strong>. The task is to rotate the array by <strong>d</strong> elements where d&nbsp;</span><span style="font-size: 18px;">≤</span><span style="font-size: 18px;"> arr.size</span><span style="font-size: 18px;">.</span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>arr[] = [-1, -2, -3, 4, 5, 6, 7], d = 2
+<strong>Output:</strong> [-3, 4, 5, 6, 7, -1, -2]
+<strong>Explanation:</strong> <br>Rotate by 1: [-2, -3, 4, 5, 6, 7, -1]<br>Rotate by 2: [-3, 4, 5, 6, 7, -1, -2]</span>
+</pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>arr[] = [1, 3, 4, 2], d = 3 <br></span><span style="font-size: 18px;"><strong>Output:</strong> [2, 1, 3, 4]<br><strong>Explanation: </strong>After rotating the array three times, the first three elements shift one by one to the right.</span></pre>
+<p><span style="font-size: 18px;"><strong>Expected Time Complexity:</strong> O(n)<br><strong>Expected Auxiliary Space:</strong>&nbsp;O(1)</span></p>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 ≤ arr.size ≤ 10<sup>6</sup><br>-10<sup>9</sup> ≤ arr[i] ≤ 10<sup>9</sup><br>0 ≤ d ≤ arr.size</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Codenation</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Arrays</code>&nbsp;<code>Data Structures</code>&nbsp;
