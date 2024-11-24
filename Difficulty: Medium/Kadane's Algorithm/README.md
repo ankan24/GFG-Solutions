@@ -1,0 +1,13 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1">Kadane's Algorithm</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given an integer array <strong>arr[].</strong> You need to find the <strong>maximum</strong> sum of a subarray.<br></span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input: </strong></span><span style="font-size: 18px;">arr[] = [2, 3, -8, 7, -1, 2, 3]</span><span style="font-size: 18px;">
+<strong>Output: </strong>11<strong>
+Explanation: </strong>The subarray {7, -1, 2, 3} has the largest sum 11.</span>
+</pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong></span><span style="font-size: 18px;">arr[] = [-2, -4]</span><span style="font-size: 18px;">
+<strong>Output: </strong>-2<strong>
+Explanation: </strong>The subarray {-2} has the largest sum -2.</span></pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong></span><span style="font-size: 18px;">arr[] = [5, 4, 1, 7, 8]</span><span style="font-size: 18px;">
+<strong>Output: </strong>25<strong>
+Explanation: </strong>The subarray {5, 4, 1, 7, 8} has the largest sum 25.</span></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:<br></strong>1 ≤ arr.size() ≤ 10<sup>5</sup><strong><br></strong></span><span style="font-size: 18px;">-10<sup>9</sup> ≤ arr[i] ≤ 10<sup>4</sup></span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Zoho</code>&nbsp;<code>Flipkart</code>&nbsp;<code>Morgan Stanley</code>&nbsp;<code>Accolite</code>&nbsp;<code>Amazon</code>&nbsp;<code>Microsoft</code>&nbsp;<code>Samsung</code>&nbsp;<code>Snapdeal</code>&nbsp;<code>24*7 Innovation Labs</code>&nbsp;<code>Citrix</code>&nbsp;<code>D-E-Shaw</code>&nbsp;<code>FactSet</code>&nbsp;<code>Hike</code>&nbsp;<code>Housing.com</code>&nbsp;<code>MetLife</code>&nbsp;<code>Ola Cabs</code>&nbsp;<code>Oracle</code>&nbsp;<code>Payu</code>&nbsp;<code>Teradata</code>&nbsp;<code>Visa</code>&nbsp;<code>Walmart</code>&nbsp;<code>Adobe</code>&nbsp;<code>Google</code>&nbsp;<code>Arcesium</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Arrays</code>&nbsp;<code>Dynamic Programming</code>&nbsp;<code>Data Structures</code>&nbsp;<code>Algorithms</code>&nbsp;
