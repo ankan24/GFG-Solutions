@@ -29,13 +29,16 @@ class Solution {
     int getCount(struct Node* head) {
 
         // Code here
-        struct Node *node = head;
-        int count = 0;
-        while(node!=NULL){
-            count++;
-            node=node->next;
+        if(head == NULL){
+            return 0;
         }
-        return count;
+        Node* temp = head;
+        int c = 1;
+        while(temp->next!=NULL){
+            c++;
+            temp = temp->next;
+        }
+        return c;
     }
 };
 
