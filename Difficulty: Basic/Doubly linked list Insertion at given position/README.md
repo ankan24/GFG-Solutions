@@ -1,0 +1,11 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/insert-a-node-in-doubly-linked-list/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=insert-a-node-in-doubly-linked-list">Doubly linked list Insertion at given position</a></h2><h3>Difficulty Level : Difficulty: Basic</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 12pt;">Given a doubly-linked list, a&nbsp;position <strong>p,</strong>&nbsp;and an integer <strong>x.</strong> The task is to add a&nbsp;new node with value <strong>x</strong> at the position just after <strong>p<sup>th</sup></strong> node in the doubly linked list and return the head of updated list.</span></p>
+<p><span style="font-size: 12pt;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 12pt;"><strong>Input: </strong>LinkedList: 2&lt;-&gt;4&lt;-&gt;5, p = 2, x = 6 
+<strong>Output: </strong>2&lt;-&gt;4&lt;-&gt;5&lt;-&gt;6<strong>
+Explanation: </strong>p = 2, and x = 6. So, 6 is inserted after p, i.e, at position 3 (0-based indexing).
+</span></pre>
+<pre><span style="font-size: 12pt;"><strong>Input: </strong>LinkedList: 1&lt;-&gt;2&lt;-&gt;3&lt;-&gt;4, p = 0, x = 44
+<strong>Output: </strong>1&lt;-&gt;44&lt;-&gt;2&lt;-&gt;3&lt;-&gt;4<strong>
+Explanation: </strong>p = 0, and x = 44 . So, 44 is inserted after p, i.e, at position 1 (0-based indexing).</span></pre>
+<p><span style="font-size: 12pt;"><strong>Expected Time Complexity</strong>: O(n)<br><strong>Expected Auxilliary Space</strong>: O(1)</span></p>
+<p><span style="font-size: 12pt;"><strong>Constraints:</strong><br>1 &lt;=&nbsp;<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">p &lt; </span><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">size of doubly linked list &lt;= 10<sup>6<br></sup></span></span><span style="font-size: 12pt;">1 &lt;= x<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">&nbsp;&lt;= 10</span><sup>6</sup></span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>doubly-linked-list</code>&nbsp;<code>Data Structures</code>&nbsp;
