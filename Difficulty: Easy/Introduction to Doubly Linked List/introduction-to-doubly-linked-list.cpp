@@ -83,10 +83,9 @@ class Solution {
       for(int i=1;i<n;i++){
           Node* newnode = new Node(arr[i]);
           
-          newnode->next = temp->next;
-          temp->next =newnode;
-          newnode->prev = temp;
-          temp = newnode;
+           temp->next = newnode;
+            newnode->prev = temp;
+            temp = newnode;
           
       }
       return head;
