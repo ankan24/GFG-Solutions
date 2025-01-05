@@ -10,16 +10,16 @@ import java.util.*;
     int countPairs(int a[], int target) {
         // Your code here
         int left=0;
+        int right = a.length-1;
         Arrays.sort(a);
-        int right=a.length-1;
         int c=0;
         while(left<right){
-            if(a[left]+a[right]<target){
-                c+=(right-left);
-                left++;
+            if(a[left]+a[right]>=target){
+             right--;
             }
             else{
-                right--;
+                c+=(right-left);
+                left++;
             }
         }
         return c;
