@@ -1,0 +1,13 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1?page=4&sortBy=submissions">Remove Duplicates from a Sorted Linked List</a></h2><h3>Difficulty Level : Difficulty: Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 12pt;">Given a singly linked list. The task is to remove duplicates (nodes with duplicate values) from the given list (if it exists).</span><br><span style="font-size: 12pt;"><strong>Note:</strong> Try not to use extra space. The nodes are arranged in a <strong>sorted </strong>way.</span></p>
+<p><span style="font-size: 12pt;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 12pt;"><strong>Input:
+</strong>LinkedList: 2-&gt;2-&gt;4-&gt;5
+<strong>Output: </strong>2 -&gt; 4 -&gt; 5<br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/700196/Web/Other/blobid0_1723610760.png" width="264" height="161"><strong>
+Explanation: </strong>In the given linked list 2 -&gt; 2 -&gt; 4 -&gt; 5, only 2 occurs more than 1 time. So we need to remove it once.
+</span></pre>
+<pre><span style="font-size: 12pt;"><strong>Input:
+</strong>LinkedList: 2-&gt;2-&gt;2-&gt;2-&gt;2
+<strong>Output: </strong>2<br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/700196/Web/Other/blobid1_1723610768.png" width="264" height="161"><strong>
+Explanation: </strong>In the given linked list  2 -&gt; 2 -&gt; 2 -&gt; 2, 2 is the only element and is repeated 5 times. So we need to remove any four 2.</span></pre>
+<p><span style="font-size: 12pt;"><strong>Expected Time Complexity</strong> : O(n)<br><strong>Expected Space</strong>&nbsp;</span><strong style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 16px;">Complexity</strong><span style="font-size: 12pt; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">: O(1)</span></p>
+<p><span style="font-size: 12pt;"><strong>Constraints:</strong><br>1 &lt;= Number of nodes, data of nodes &lt;= 10<sup>5&nbsp;<br></sup></span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Microsoft</code>&nbsp;<code>OYO Rooms</code>&nbsp;<code>Oracle</code>&nbsp;<code>Visa</code>&nbsp;<code>Adobe</code>&nbsp;<code>Myntra</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Linked List</code>&nbsp;<code>Data Structures</code>&nbsp;
