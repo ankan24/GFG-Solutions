@@ -6,9 +6,21 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
+    void fun(int *l , int *r){
+        int t = *l;
+        *l = *r;
+        *r = t;
+    };
+  
     void reverseArray(vector<int> &arr) {
         // code here
-        reverse(arr.begin(),arr.end());
+        int l = 0;
+        int r= arr.size()-1;
+        while(l < r){
+            fun(&arr[l],&arr[r]);
+            l++;
+            r--;
+        }
     }
 };
 
@@ -33,6 +45,7 @@ int main() {
             cout << arr[i] << " ";
         }
         cout << endl;
+        cout << "~" << endl;
     }
     return 0;
 }
