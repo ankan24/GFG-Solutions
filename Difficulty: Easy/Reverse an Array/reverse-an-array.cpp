@@ -4,25 +4,23 @@ using namespace std;
 
 
 // } Driver Code Ends
+
 class Solution {
   public:
-    void fun(int *l , int *r){
-        int t = *l;
-        *l = *r;
-        *r = t;
+    void fun(int l , int r , vector<int> &a){
+        if(l>=r) return;
+        swap(a[l],a[r]);
+        fun(l+1,r-1,a);
     };
   
     void reverseArray(vector<int> &arr) {
         // code here
         int l = 0;
         int r= arr.size()-1;
-        while(l < r){
-            fun(&arr[l],&arr[r]);
-            l++;
-            r--;
-        }
+        fun(l , r , arr);
     }
 };
+
 
 //{ Driver Code Starts.
 int main() {
