@@ -10,15 +10,42 @@ class Solution {
   public:
     int countFreq(vector<int>& arr, int target) {
         // code here
-        int c = 0;
-        for(int i=0;i<arr.size();i++){
-            if(arr[i]==target){
-                c++;
+        int l = 0;
+        int r = arr.size()-1;
+        int first = -1, last =-1;
+        while(l <= r){
+             int m = l+(r-l)/2;
+            if(arr[m]==target){
+                first = m;
+                 r = m-1;
+            }else if(arr[m] < target){
+                l = m+1;
+            }else{
+                r = m-1;
             }
         }
-        return c;
+        
+        l = 0;
+        r = arr.size()-1;
+        
+         while(l <= r){
+             int m = l+(r-l)/2;
+            if(arr[m]==target){
+                last = m;
+                l = m+1;
+            }else if(arr[m] < target){
+                l = m+1;
+            }else{
+                r = m-1;
+            }
+        }
+        
+        if(first == -1 && last == -1) return 0;
+        
+        return last-first+1;
     }
 };
+
 
 
 //{ Driver Code Starts.
