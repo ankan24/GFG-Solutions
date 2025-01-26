@@ -8,18 +8,20 @@ class Solution {
   public:
 
     int findFloor(vector<int>& arr, int k) {
-
         // Your code here
-        if(arr[0] > k){
-            return -1;
-        }
-        int n = arr.size()-1;
-        for(int i=n;i>0;i--){
-            if(arr[i] <= k){
-                return i;
+        int l = 0;
+        int r = arr.size()-1;
+        int ans = -1;
+        while(l <= r){
+            int m = l+(r-l)/2;
+            if(arr[m] <= k){
+                ans = m;
+                l = m+1;
+            }else if(arr[m] > k){
+                r = m-1;   
             }
         }
-        return 0;
+        return ans;
     }
 };
 
