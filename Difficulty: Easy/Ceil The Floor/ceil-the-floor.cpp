@@ -12,29 +12,24 @@ class Solution {
   public:
     vector<int> getFloorAndCeil(int x, vector<int> &arr) {
         // code here
-        sort(arr.begin(),arr.end());
-        int l = 0;
-        int r = arr.size()-1;
-        int min = -1;
-        int max = -1;
-        while(l<=r){
-            int m = l+(r-l)/2;
-            if (arr[m] == x) {
-                return {x, x};
-            }
-            if(arr[m] < x){
-                min = arr[m];
-                l = m+1;
-            }
-            else{
-                max = arr[m];   
-                r = m-1; 
-            }
-        }
-         return {min,max};
+       sort(arr.begin(),arr.end());
+       int l = 0;
+       int floor = -1 , ceil = -1;
+       int r = arr.size()-1;
+       while(l<=r){
+           int m = l+(r-l)/2;
+           if(arr[m]==x) return {arr[m],arr[m]};
+           else if(arr[m] < x){
+               floor = arr[m];
+               l = m+1;
+           }else{
+               ceil = arr[m];
+               r = m-1;
+           }
+       }
+       return {floor,ceil};
     }
 };
-
 
 //{ Driver Code Starts.
 
