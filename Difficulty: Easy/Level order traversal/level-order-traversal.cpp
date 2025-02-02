@@ -4,84 +4,77 @@ using namespace std;
 
 /* A binary tree node has data, pointer to left child
    and a pointer to right child */
-struct Node {
+class Node {
+  public:
     int data;
-    struct Node* left;
-    struct Node* right;
+    Node* left;
+    Node* right;
+
+    // Constructor
+    Node(int val) {
+        data = val;
+        left = nullptr;
+        right = nullptr;
+    }
 };
 
 // Utility function to create a new Tree Node
 Node* newNode(int val) {
-    Node* temp = new Node;
-    temp->data = val;
-    temp->left = NULL;
-    temp->right = NULL;
-
-    return temp;
+    return new Node(val);
 }
 
 
 // } Driver Code Ends
 /* A binary tree Node
-
-struct Node
-{
+class Node {
+  public:
     int data;
-    struct Node* left;
-    struct Node* right;
+    Node* left;
+    Node* right;
 
-    Node(int x){
-        data = x;
-        left = right = NULL;
+    // Constructor
+    Node(int val) {
+        data = val;
+        left = nullptr;
+        right = nullptr;
     }
 };
- */
+*/
 
 class Solution {
   public:
-    void levelOrderCheck(queue<Node*> q,vector<int> &ans){
-        if(q.empty()){
-            return;
-        }
-        int size = q.size();
-        for(int i=0;i<size;i++){
-            Node* f = q.front();
-            q.pop();
-            ans.push_back(f->data);
-              if (f->left) {
-                q.push(f->left);
-            }
-            if (f->right) {
-                q.push(f->right);
-            }
-        }
-       levelOrderCheck(q,ans);
-    }
-    // Function to return the level order traversal of a tree.
-    vector<int> levelOrder(Node* root) {
+    vector<vector<int>> levelOrder(Node *root) {
         // Your code here
-        
-        vector<int> ans;
-        if (!root) {
+        vector<vector<int>> ans;
+        if(root==NULL){
             return ans;
         }
-
         queue<Node*> q;
         q.push(root);
-        levelOrderCheck(q, ans);
+        while(!q.empty()){
+            int size = q.size();
+            vector<int> level;
+        
+        for(int i=0;i<size;i++){    
+            Node* ele = q.front();
+            level.push_back(ele->data);
+            q.pop();
+            if(ele->left) q.push(ele->left);
+            if(ele->right) q.push(ele->right);
+          }
+          ans.push_back(level);
+        }
         return ans;
     }
 };
-
-
 
 //{ Driver Code Starts.
 
 /* Helper function to test mirror(). Given a binary
    search tree, print out its data elements in
    increasing sorted order.*/
-void inOrder(struct Node* node) {
-    if (node == NULL)
+void inOrder(Node* node) {
+    if (node == nullptr)
         return;
 
     inOrder(node->left);
@@ -94,7 +87,7 @@ void inOrder(struct Node* node) {
 Node* buildTree(string str) {
     // Corner Case
     if (str.length() == 0 || str[0] == 'N')
-        return NULL;
+        return nullptr;
 
     // Creating vector of strings from input
     // string after spliting by space
@@ -162,13 +155,13 @@ int main() {
         getline(cin, s);
         Node* root = buildTree(s);
         Solution ob;
-        vector<int> res = ob.levelOrder(root);
-        for (int i : res)
-            cout << i << " ";
+        vector<vector<int>> res = ob.levelOrder(root);
+        for (auto level : res) {
+            for (int ele : level)
+                cout << ele << " ";
+        }
         cout << endl;
-
-        cout << "~"
-             << "\n";
+        cout << "~" << endl;
     }
     return 0;
 }
