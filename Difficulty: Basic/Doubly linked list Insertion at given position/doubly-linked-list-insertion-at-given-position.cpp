@@ -31,28 +31,21 @@ class Solution {
     // Function to insert a new node at given position in doubly linked list.
     Node *addNode(Node *head, int pos, int data) {
         // code here
-        Node* newnode = new Node(data);
         Node* temp = head;
-        
-        int c = 0;
-        while(c!=pos){
-            c++;
+        while(pos-- && temp->next!=NULL){
             temp = temp->next;
         }
-        
-        newnode->next = temp->next;
-        if(temp->next==NULL){
-            newnode->next = NULL;
-        }else{
-        temp->next->prev = newnode;
+        Node* newNode = new Node(data);
+        newNode ->next = temp->next;
+        if(temp->next != NULL){
+            temp->next->prev = newNode;
         }
-        temp->next = newnode;
-        newnode->prev = temp;
-        
+        temp->next = newNode;
+        newNode-> prev = temp;
         return head;
-        
     }
 };
+
 
 //{ Driver Code Starts.
 
