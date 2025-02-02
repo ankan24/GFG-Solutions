@@ -77,18 +77,16 @@ class Solution {
   public:
     Node* constructDLL(vector<int>& arr) {
         // code here
+        int n = arr.size();
         Node* head = new Node(arr[0]);
         Node* temp = head;
-        int  n = arr.size();
-      for(int i=1;i<n;i++){
-          Node* newnode = new Node(arr[i]);
-          
-           temp->next = newnode;
-            newnode->prev = temp;
-            temp = newnode;
-          
-      }
-      return head;
+        for(int i=1;i<n;i++){
+            Node* newNode = new Node(arr[i]);
+            temp -> next = newNode;
+            newNode -> prev = temp;
+            temp = temp->next;
+        }
+        return head;
     }
 };
 
