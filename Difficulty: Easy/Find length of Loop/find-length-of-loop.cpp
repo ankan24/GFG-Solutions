@@ -55,21 +55,19 @@ class Solution {
         while(fast!=NULL && fast->next!=NULL){
             slow = slow->next;
             fast = fast->next->next;
-            
             if(slow == fast){
-             c = 1;
-             Node* temp = slow;
-                while(temp->next != slow){
-                    temp = temp->next;
+                c = 1;
+                Node* temp = slow;
+                while(temp->next!=slow){
+                    temp =temp->next;
                     c++;
                 }
-             return c;
+                return c;
             }
         }
-    return 0;
+        return 0;
     }
 };
-
 
 //{ Driver Code Starts.
 
