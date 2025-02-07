@@ -42,19 +42,14 @@ class Solution {
     Node* reverseList(struct Node* head) {
         // code here
         Node* temp = head;
-        stack<int> st;
-        while(temp!= NULL){
-            st.push(temp->data);
-            temp = temp->next;
-        }
-        
-        temp = head;
+        Node* prev = NULL;
         while(temp!=NULL){
-            temp->data = st.top();
-            temp = temp->next;
-            st.pop();
+            Node* front = temp->next;
+            temp->next = prev;
+            prev = temp;
+            temp = front;
         }
-        return head;
+        return prev;
     }
 };
 
