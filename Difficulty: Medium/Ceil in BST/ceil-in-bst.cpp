@@ -101,28 +101,22 @@ cout << "~" << "\n";
 // User function Template for C++
 
 // Function to return the ceil of given number in BST.
-void findCill(Node* root,int input,vector<int>& arr){
-    if(root==NULL){
-        return;
-    }
-    
-    if(root->left) findCill(root->left,input,arr);
-    arr.push_back(root->data);
-    if(root->right) findCill(root->right,input,arr);
-}
-
-
 int findCeil(Node* root, int input) {
-    // Your code here
-    vector<int> arr;
-    findCill(root,input,arr);
     int ans = -1;
-    for(int i=0;i<arr.size();i++){
-        if(arr[i] >= input){
-            ans = arr[i];
-            break;
+    while(root){
+        if(root->data == input){
+            ans = root->data;
+            return ans;
+        }
+        
+        if(input > root->data){
+            root = root->right;
+        }
+        else if(input < root->data){
+            ans = root->data;
+            root = root->left;
         }
     }
-    
     return ans;
+    // Your code here
 }
