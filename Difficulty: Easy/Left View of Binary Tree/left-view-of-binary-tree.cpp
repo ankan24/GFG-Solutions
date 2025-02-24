@@ -28,32 +28,22 @@ struct Node
 
 class Solution {
   public:
+    void left(Node* root,int lev,vector<int>& ans){
+        if(root==NULL) return;
+        
+        if(lev==ans.size()){
+            ans.push_back(root->data);
+        }
+        left(root->left,lev+1,ans);
+        left(root->right,lev+1,ans);
+    }
     vector<int> leftView(Node *root) {
         // code here
         vector<int> ans;
-        if(root==NULL){
-            return ans;
-        }
-        
-        queue<Node*> q;
-        q.push(root);
-        while(!q.empty()){
-            int size = q.size();
-            int firstNodeValue;
-            for(int i=0;i<size;i++){
-                Node* n = q.front();
-                q.pop();
-                if(i==0)  firstNodeValue = n->data;
-                
-                if(n->left){
-                    q.push(n->left);
-                }
-                if(n->right){
-                    q.push(n->right);
-                }
-            }
-            ans.push_back(firstNodeValue);
-        }
+        if(root == NULL) return ans;
+        int lev = 0;
+        ans.push_back(root->data);
+        left(root,lev,ans);
         return ans;
     }
 };
