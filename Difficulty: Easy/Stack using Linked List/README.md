@@ -1,0 +1,18 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/implement-stack-using-linked-list/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=implement-stack-using-linked-list">Stack using Linked List</a></h2><h3>Difficulty Level : Difficulty: Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Let's give it a try! You have a linked list and must implement the functionalities push and pop of stack using this given linked list. Your task is to use the class as shown in the comments in the code editor and complete the functions push() and pop() to implement a stack.&nbsp;<br></span><span style="font-size: 18px;">The push() method takes one argument, an integer&nbsp;</span><strong style="font-size: 18px;">'x'</strong><span style="font-size: 18px;">&nbsp;to be pushed into the stack and&nbsp;</span><strong style="font-size: 18px;">pop()</strong><span style="font-size: 18px;">&nbsp;which returns an integer present at the top and popped out from the stack. If the stack is empty then return&nbsp;</span><strong style="font-size: 18px;">-1</strong><span style="font-size: 18px;">&nbsp;from the pop() method.<br></span><strong><span style="font-size: 18px;">Note:&nbsp;</span></strong><span style="font-size: 18px;">The input is given in the form of queries. Since there are two operations push() and pop(), there is two types of queries as described below:<br></span><span style="font-size: 18px;">(i) 1&nbsp;&nbsp; (a query of this type takes <strong>x</strong> as another parameter and pushes it into the stack)<br></span><span style="font-size: 18px;">(ii) 2&nbsp; (a query of this type means to pop an element from the stack and return the popped element)<br></span><span style="font-size: 18px;">Input is separated by space and as described above.&nbsp;</span></p>
+<p><span style="font-size: 18px;"><strong>Examples </strong>:</span></p>
+<pre><span style="font-size: 18px;"><strong>Input</strong>: [[1,2], [1,3], [2], [1,4], [2]]
+<strong>Output</strong>: [3, 4]
+<strong>Explanation</strong>: 
+push(2)  : the stack will be {2}
+push(3)  : the stack will be {2 3}
+pop()    : poped element will be 3,the stack will be {2}
+push(4)  : the stack will be {2 4}
+pop()    : poped element will be 4</span></pre>
+<pre><span style="font-size: 18px;"><strong>Input</strong>: [[2], [1,4], [1,5], [2]]
+<strong>Output</strong>: [-1, 4]</span><br><span style="font-size: 18px;"><strong>Explanation</strong>: 
+pop()    : the stack is empty so its -1.
+push(4)  : the stack will be {4}
+push(5)  : the stack will be {4 5}
+pop()    : poped element will be 5, the stack will be {4}</span></pre>
+<p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; white-space: normal;"><span style="font-size: 18px;"><strong>Expected Time Complexity</strong>: O(1)</span><br><span style="font-size: 18px;"><strong>Expected Auxillary Space:</strong>&nbsp;O(1)</span></p>
+<p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; white-space: normal;"><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 &lt;= numbers of calls made to push, pop &lt;= 100<br>1 &lt;= x &lt;= 100</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Microsoft</code>&nbsp;<code>Samsung</code>&nbsp;<code>FactSet</code>&nbsp;<code>SAP Labs</code>&nbsp;<code>Codenation</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Linked List</code>&nbsp;<code>Stack</code>&nbsp;<code>Data Structures</code>&nbsp;
