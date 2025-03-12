@@ -1,0 +1,9 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/min-cost-climbing-stairs/1">Min Cost Climbing Stairs</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given an array of integers <strong>cost[]</strong>&nbsp;where&nbsp;<strong>cost[i]</strong>&nbsp;is the cost of the i<sup>th</sup> step on a staircase. Once the cost is paid, you can either climb one or two steps. Return the <strong>minimum </strong>cost to reach the top of the floor.<br>Assume 0-based Indexing.&nbsp;</span><span style="font-size: 18px;">You can either start from the step with index 0, or the step with index 1.</span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>cost[] = [10, 15, 20]
+<strong>Output: </strong>15<strong>
+Explanation: </strong>Cheapest option is to start at cost[1], pay that cost, and go to the top.<br><br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/708151/Web/Other/blobid1_1741612335.png" width="463" height="281"><br><br></span></pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>cost[] = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
+<strong>Output: </strong>6<strong>
+Explanation: </strong>Cheapest option is to start on cost[0], and only step on 1s, skipping cost[3].<br><br></span><img style="font-size: 18px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/708151/Web/Other/blobid0_1741612208.png" width="654" height="330"></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>2 ≤ cost.size() ≤ 10<sup>5</sup><br>0&nbsp;≤ cost[i] ≤ 999</span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Dynamic Programming</code>&nbsp;
