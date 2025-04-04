@@ -5,18 +5,23 @@ using namespace std;
 
 // } Driver Code Ends
 
+
 class Solution {
   public:
+    int solve(int x ,int n){
+        if(x==0) return 1;
+        return n*solve(x-1,n);
+    }
     int reverseExponentiation(int n) {
         // code here
-          int temp = n;
-            int rev = 0;
-            while(n>0){
-                int rem = n%10;
-                n = n/10;
-                rev = rev*10+rem;
-            }
-        return pow(temp,rev);
+        int x = 0;
+        int temp = n;
+        while(n > 0){
+            int rem = n%10;
+            x = x*10+rem;
+            n = n/10;
+        }
+        return solve(x,temp);
     }
 };
 
