@@ -1,0 +1,12 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/tower-of-hanoi-1587115621/1">Tower Of Hanoi</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">In the Tower of Hanoi puzzle, you are given<strong> n </strong>disks stacked in ascending order (smallest at the top) on the first of three rods. The goal is to move all disks to the third rod following two rules: only one disk can be moved at a time, and a disk can only be placed on top of a larger disk. Given the number of disks n and three rods labeled as from, to, and aux (starting rod, target rod, and auxiliary rod, respectively),&nbsp; returns the total<strong> number of moves </strong>needed to transfer all disks from the starting rod to the target rod.</span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>n = 2
+<strong>Output: </strong>3<strong>
+Explanation: </strong>For n =2 , steps will be as follows in the example and total 3 steps will be taken.<br></span><span style="font-size: 18px;">move disk 1 from rod 1 to rod 2<br></span><span style="font-size: 18px;">move disk 2 from rod 1 to rod 3<br>move disk 1 from rod 2 to rod 3<br></span></pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>n = 3
+<strong>Output: </strong>7<strong>
+Explanation: </strong>For N=3 , steps will be as follows in the example and total 7 steps will be taken.<br>move disk 1 from rod 1 to rod 3<br>move disk 2 from rod 1 to rod 2<br>move disk 1 from rod 3 to rod 2<br>move disk 3 from rod 1 to rod 3<br>move disk 1 from rod 2 to rod 1<br>move disk 2 from rod 2 to rod 3<br>move disk 1 from rod 1 to rod 3<br></span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>n = 0
+<strong>Output: </strong>0<strong>
+Explanation: </strong>Total 0 steps will be taken.</span></pre>
+<p><strong><span style="font-size: 18px;">Constraints:</span></strong><br><span style="font-size: 18px;">0 &lt;= n &lt;= 16</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Flipkart</code>&nbsp;<code>Microsoft</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Recursion</code>&nbsp;<code>Algorithms</code>&nbsp;
