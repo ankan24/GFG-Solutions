@@ -12,11 +12,20 @@ using namespace std;
 
 class Solution {
   public:
+    void solve(vector<int>& arr ,int n ,int& mx){
+        if(n==0) return;
+        
+        if(mx < arr[n-1]) mx = arr[n-1];
+        solve(arr , n-1 , mx);
+        
+    }
+    
     int largest(vector<int> &arr) {
         // code here
-        sort(arr.begin(),arr.end());
         int n = arr.size();
-        return arr[n-1];
+        int mx = INT_MIN;
+        solve(arr,n , mx);
+        return mx;
     }
 };
 
