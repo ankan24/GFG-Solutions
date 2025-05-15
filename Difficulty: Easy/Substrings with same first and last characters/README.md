@@ -1,0 +1,9 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/substrings-with-similar-first-and-last-characters3644/1">Substrings with same first and last characters</a></h2><h3>Difficulty Level : Difficulty: Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given a string <strong>s</strong> consisting of lowercase characters, the task is to find the <strong>count</strong> of all substrings that<strong> start </strong>and <strong>end</strong> with the same character.</span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input:</strong> s = "abcab"
+<strong>Output:</strong> 7
+<strong>Explanation:</strong> </span><span style="font-size: 20px;">There are 7 substrings where the first and last characters are the same: "a", "abca", "b", "bcab", "c", "a", and "b"</span></pre>
+<pre><span style="font-size: 18px;"><strong>Input:</strong> s = "aba"
+<strong>Output:</strong> 4
+<strong>Explanation:</strong> </span><span style="font-size: 20px;">There are 4 substrings where the first and last characters are the same: "a", "aba", "b", "a"</span></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 &lt;= |s| &lt;= 10<sup>4</sup></span><br><span style="font-size: 18px;"><strong>s</strong> contains lower case english alphabets</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Amazon</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Hash</code>&nbsp;<code>Strings</code>&nbsp;<code>Data Structures</code>&nbsp;<code>Algorithms</code>&nbsp;
