@@ -1,0 +1,17 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/remove-the-balls--170647/1">Remove the balls</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p data-start="103" data-end="184"><span style="font-size: 14pt;">You are given two arrays, <strong><code data-start="129" data-end="136">color</code></strong> and <strong><code data-start="141" data-end="149">radius</code></strong>, representing a sequence of balls:</span></p>
+<p><span style="font-size: 14pt;"> </span></p>
+<ul>
+<li><span style="font-size: 14pt;"><code data-start="188" data-end="198"><strong>color[i]</strong></code> is the color of the i-th ball.</span></li>
+<li><strong style="font-size: 14pt;"><code data-start="234" data-end="245">radius[i]</code></strong><span style="font-size: 14pt;"> is the radius of the i-th ball.</span></li>
+</ul>
+<p><span style="font-size: 14pt;"> </span></p>
+<p data-start="279" data-end="413"><span style="font-size: 14pt;">If two <strong data-start="286" data-end="301">consecutive</strong> balls have the <strong data-start="317" data-end="342">same color </strong>and <strong data-start="317" data-end="342">radius</strong>, remove them both. Repeat this process until no more such pairs exist.</span></p>
+<p class="" data-start="166" data-end="269"><span style="font-size: 14pt;"> </span></p>
+<p data-start="415" data-end="484"><span style="font-size: 14pt;">Return the <strong data-start="426" data-end="455">number </strong>of<strong data-start="426" data-end="455"> </strong>balls <strong data-start="426" data-end="455">remaining</strong> after all possible removals.</span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input</strong>: color[] = [2, 3, 5], radius[] = [3, 3, 5]
+<strong>Output: </strong>3
+<strong>Explanation</strong>: All the 3 balls have different colors and radius.</span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>color[] = [2, 2, 5], radius[] = [3, 3, 5]<strong><br>Output:</strong> 1
+<strong>Explanation</strong>: </span><span style="font-size: 18.6667px;">First ball and second ball have same color 2 and same radius 3. So, after removing only one ball is left. It cannot be removed from the array. Hence, the final array has length 1.</span></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 ≤ color.size() = radius.size() ≤ 10<sup>5</sup><br>1 ≤ color[i] ≤ 10<sup>9</sup></span><span style="font-size: 18px;"><sup> <br></sup></span><span style="font-size: 18px;">1 ≤ radius[i] ≤ 10<sup>9</sup></span><span style="font-size: 18px;"><sup> &nbsp;</sup></span><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</sup></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Stack</code>&nbsp;<code>Data Structures</code>&nbsp;
