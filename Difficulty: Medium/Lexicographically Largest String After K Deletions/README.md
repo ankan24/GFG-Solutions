@@ -1,0 +1,9 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/lexicographically-largest-string-after-deleting-k-characters/1">Lexicographically Largest String After K Deletions</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 14pt;">Given a string <strong>s</strong> consisting of lowercase English letters and an integer <strong>k</strong>, your task is to remove exactly k characters from the string. The resulting string must be the<strong> </strong>largest possible in <strong>lexicographical&nbsp; order</strong>, while maintain the relative order of the remaining characters.</span></p>
+<h3><strong><span style="font-size: 18px;">Examples:</span></strong></h3>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>s = "ritz", k = 2
+<strong>Output:</strong> tz 
+<strong>Explaination: </strong></span><span style="font-size: 14pt;">By removing two characters in all possible ways, we get: "ri", "rt", "rz", "it", "iz", and "tz". Among these, "tz" is lexicographically largest string.</span></pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>s = "zebra", k = 3
+<strong>Output:</strong> zr 
+<strong>Explaination: </strong></span><span style="font-size: 14pt;">Removing "e", "b", and "a" results in "zr", which is lexicographically largest string.</span></pre>
+<p><strong style="font-size: 18px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Constraints:<br></strong><span style="font-size: 18px;">1 ≤ s.size() ≤ 10<sup>5<br></sup>0&nbsp; ≤&nbsp; k &lt; s.size()</span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Stack</code>&nbsp;<code>Strings</code>&nbsp;<code>Greedy</code>&nbsp;<code>Data Structures</code>&nbsp;
