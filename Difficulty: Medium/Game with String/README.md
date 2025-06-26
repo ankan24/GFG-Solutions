@@ -1,0 +1,10 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/game-with-string4100/1">Game with String</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p data-start="70" data-end="253"><span style="font-size: 14pt;">Given a string <strong>s</strong> consisting of lowercase alphabets and an integer <strong>k,</strong>&nbsp;your task is to find the <strong data-start="172" data-end="198">minimum </strong>possible value of the string after removing exactly <strong>k</strong> characters.</span></p>
+<p data-start="70" data-end="253"><span style="font-size: 14pt;">The <strong data-start="259" data-end="282">value </strong>of the string is defined as the <strong data-start="301" data-end="323">sum </strong>of the squares of the frequencies of each distinct character present in the string.</span></p>
+<p><span style="font-size: 14pt;"><strong>Examples :</strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input:</strong> s = "abbccc", k = 2
+<strong>Output:</strong> 6
+<strong>Explaination: </strong>We remove two 'c' to get the value as 1<sup>2</sup> + 2<sup>2</sup> + 1<sup>2</sup> = 6 or We remove one 'b' and one 'c' to get the value 1<sup>2</sup> + 1<sup>2</sup> + 2<sup>2</sup> = 6<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">.</span></span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>s = "aaab", k = 2
+<strong>Output:</strong> 2
+<strong>Explaination:</strong> We remove two 'a'. Now we get the value as 1<sup>2 </sup>+ 1<sup>2</sup> = 2.</span></pre>
+<p><span style="font-size: 14pt;"><strong>Constraints:</strong><br>0 ≤ k ≤ s.length() ≤ 10<sup>5</sup>&nbsp;</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Amazon</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Strings</code>&nbsp;<code>Heap</code>&nbsp;<code>Data Structures</code>&nbsp;
