@@ -1,0 +1,13 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/trail-of-ones3242/1">Trail of ones</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given an integer <strong>n</strong>, the task is to <strong>count</strong> the number of <strong>binary strings</strong> of length <strong>n</strong> that contains at least one pair of <strong>consecutive 1's</strong>.<br><strong>Note:</strong>&nbsp;A binary string is a sequence made up of only<strong> 0's</strong> and <strong>1's</strong>.</span></p>
+<p><strong><span style="font-size: 18px;">Examples:</span></strong></p>
+<pre><strong><span style="font-size: 18px;">Input:</span></strong> <span style="font-size: 18px;">n = 2</span>
+<strong><span style="font-size: 18px;">Output:</span></strong> <span style="font-size: 18px;">1</span>
+<strong><span style="font-size: 18px;">Explanation:</span></strong> <span style="font-size: 18px;">There are 4 strings of </span><span style="font-size: 18px;">length 2, the strings are </span><span style="font-size: 18px;">00, 01, 10, and 11. Only </span><span style="font-size: 18px;">the string 11 has </span><span style="font-size: 18px;"><span style="font-size: 18px;">consecutive 1's.</span></span></pre>
+<pre><span style="font-size: 18px;"><span style="font-size: 18px;"><strong>Input:</strong> n = 3
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> </span></span><span style="font-size: 18px;">There are 8 strings of length 3, the strings are 000, 001, 010, 011, 100, 101, 110 and 111. The strings with consecutive 1's are 011, 110 and 111.</span></pre>
+<pre><strong><span style="font-size: 18px;">Input: </span></strong><span style="font-size: 18px;">n = 5</span>
+<strong><span style="font-size: 18px;">Output: </span></strong><span style="font-size: 18px;">19</span>
+<strong><span style="font-size: 18px;">Explanation: </span></strong><span style="font-size: 18px;">There are 19 strings</span> <span style="font-size: 18px;">having at least one pair of consecutive 1's.
+</span></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>2 ≤ n<strong> </strong>≤ 30</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Amazon</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Bit Magic</code>&nbsp;<code>Data Structures</code>&nbsp;<code>Dynamic Programming</code>&nbsp;
