@@ -1,22 +1,16 @@
 // User function template for C++
 class Solution {
   public:
-    int solve(vector<int> &a , int n , int i,vector<int> &dp){
-        if(i>=n) return 0;
-        
-        if(dp[i]!=-1) return dp[i];
-        int include = solve(a,n,i+2,dp)+a[i];
-        int exclude = solve(a,n,i+1,dp)+0;
-        dp[i] = max(include,exclude);
-        return dp[i];
-    }
-  
     // calculate the maximum sum with out adjacent
     int findMaxSum(vector<int>& arr) {
         // code here
         int n = arr.size();
-        vector<int> dp(n,-1);
-        int ans = solve(arr,n,0,dp);
-        return ans;
+        vector<int> dp(n,0);
+        dp[0] = arr[0];
+        dp[1] = max(arr[0],arr[1]);
+        for(int i=2;i<n;i++){
+            dp[i] = max(dp[i-1] , dp[i-2]+arr[i]);
+        }
+        return dp[n-1];
     }
 };
