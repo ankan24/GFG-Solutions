@@ -1,0 +1,8 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/find-duplicates-in-an-array/1?page=1&difficulty=Easy&sortBy=submissions">Array Duplicates</a></h2><h3>Difficulty Level : Difficulty: Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 14pt;">Given an array <strong>arr[]</strong> of size<strong> n</strong>, containing elements from the range <strong>1 </strong>to<strong> n</strong>, and each element appears at most <strong>twice</strong>, return an array of all the integers that appears twice.</span></p>
+<p><span style="font-size: 14pt;"><strong>Note:</strong> You can return the elements in any order but the driver code will print them in sorted order.</span></p>
+<p><span style="font-size: 14pt;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>arr[] = [2, 3, 1, 2, 3]
+<strong>Output: </strong>[2, 3] <strong>
+Explanation: </strong>2 and 3 occur more than once in the given array.</span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>arr[] = [3, 1, 2] <br><strong>Output: </strong>[]<strong><br>Explanation: </strong>There is no repeating element in the array, so the <span style="box-sizing: inherit;">output is empty.</span></span></pre>
+<p><span style="font-size: 14pt;"><strong>Constraints:<br></strong>1 ≤ n ≤&nbsp;10<sup>6</sup></span><br><span style="font-size: 14pt;">1 ≤ arr[i] ≤ n</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Paytm</code>&nbsp;<code>Zoho</code>&nbsp;<code>Flipkart</code>&nbsp;<code>Amazon</code>&nbsp;<code>D-E-Shaw</code>&nbsp;<code>Qualcomm</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Arrays</code>&nbsp;<code>Data Structures</code>&nbsp;
